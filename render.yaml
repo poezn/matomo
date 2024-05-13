@@ -6,6 +6,7 @@ services:
     # Recommended health check endpoint: https://matomo.org/faq/how-to/faq_20278/
     healthCheckPath: /matomo.php
     autoDeploy: false
+    region: frankfurt
     disk:
       name: matomo
       mountPath: /var/www/html
@@ -38,6 +39,7 @@ services:
     env: docker
     plan: standard
     autoDeploy: false
+    region: frankfurt
     disk:
       name: mysql-matomo
       mountPath: /var/lib/mysql
